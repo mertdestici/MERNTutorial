@@ -23,10 +23,6 @@ function Dashboard() {
         if (!user) {
             navigate('/login');
         }
-        console.log(getGoals());
-        console.log('*---****--*-*-*---**********');
-        console.log('*---****--*-*-*---**********');
-        console.log('*---****--*-*-*---**********');
         dispatch(getGoals());
 
         return () => {
